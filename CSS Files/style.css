@@ -1,0 +1,74 @@
+:root{
+    --primaryColor : #1d2464;
+    --secondaryColor :#f08c73;
+    --baseColor: #ECCEAE;
+}
+.section{
+    margin:auto ;
+    padding-top: .7rem;
+    margin-bottom: 2rem;
+}
+.nav-bg-color{
+    background-color: var(--primaryColor);
+}
+.navicons-color{
+    color: var(--secondaryColor);
+}
+.navicons-color:hover{
+    color: #eb917b;
+}
+.homeImg{
+height: 100vh;
+position: relative;
+overflow: hidden;
+padding-top: 6rem;
+}
+.homeImg img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1000;
+}
+.content{
+    z-index: 1;
+
+}
+.home-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index:0;
+}
+/* Events Section */
+.homeimages{
+   height:60vh;
+   position: relative;
+   overflow: hidden;
+}
+.homeimages img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+object-fit: cover;
+z-index: -1;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+z-index:0;
+
+}
+
