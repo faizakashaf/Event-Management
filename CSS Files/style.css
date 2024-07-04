@@ -1,12 +1,19 @@
 :root{
-    --primaryColor : #1d2464;
+    --primaryColor : #340F83;
     --secondaryColor :#f08c73;
-    --baseColor: #ECCEAE;
+    --baseColor: #ffefd2;
+    --font-primary: "Nunito", sans-serif;
+--font-display: "Josefin Sans", sans-serif;
 }
+
+body{
+overflow-x:hidden ;
+}
+
 .section{
     margin:auto ;
     padding-top: .7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .nav-bg-color{
     background-color: var(--primaryColor);
@@ -47,7 +54,7 @@ padding-top: 6rem;
 }
 /* Events Section */
 .homeimages{
-   height:60vh;
+   height:70vh;
    position: relative;
    overflow: hidden;
 }
@@ -69,6 +76,165 @@ z-index: -1;
     width: 100%;
     background: rgba(0,0,0,0.5);
 z-index:0;
-
 }
 
+/* services section  */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    grid-column-gap: 3rem;
+    grid-row-gap: 4rem;
+  }
+.service {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+    align-content: start;
+  }
+
+  .serviceIcon {
+    margin-top: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    grid-row: 1 / span 2;
+    fill: var(--primaryColor);
+    transform: translateY(-1rem);
+  }
+  
+  .service-heading {
+    font-size: 1.4rem;
+    color: var(--primaryColor);
+  }
+  
+  .service-content {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  
+  /* booking form styling  */
+  .booking{
+    height: auto;
+    overflow: hidden;
+    background-color: var(--baseColor);
+    padding: 1rem  .5rem;
+  }
+  .sideImage{
+    height: 90vh;
+  }
+  .sideImage img{
+height: 100%;
+width: 100%;
+object-fit:fill;
+border-radius: 5px;
+  }
+
+  /* gallery section  */
+  .image-gallery{
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(7,6vw);
+    grid-gap: 1.5rem;
+padding: 1.5rem;
+}
+.pic{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.image-gallery .pic1{
+    grid-column: 1 /span 2;
+    grid-row: 1 /span 2;
+}
+.image-gallery .pic2{
+    grid-column: 3 /span 3;
+    grid-row: 1 /span 3;
+}
+.image-gallery .pic3{
+    grid-column: 6 /span 1 ;
+    grid-row: 1 /span 2;
+}
+.image-gallery .pic4{
+    grid-column: 7 /span 2;
+    grid-row: 1 /span 2;
+}
+.image-gallery .pic5{
+    grid-column: 1 /span 2;
+    grid-row: 3 /span 3;
+}
+.image-gallery .pic6{
+    grid-column: 3 /span 2;
+    grid-row: 4 /span 2;
+}
+.image-gallery .pic7{
+    grid-column: 5 /span 1;
+    grid-row: 4 /span 1;}
+    
+.gallery .pic8{
+    grid-column: 6 /span 2;
+    grid-row: 3 /span 2;
+}
+.gallery .pic9{
+    grid-column: 8 /span 1;
+    grid-row: 3 /span 3;
+}
+.gallery .pic10{
+    grid-column: 1/span 1;
+    grid-row: 6 /span 2;
+}
+.gallery .pic11{
+    grid-column: 2 /span 2;
+    grid-row: 6 /span 2;
+}
+.gallery .pic12{
+    grid-column: 4 /span 1;
+    grid-row: 6 /span 2;
+}
+.gallery .pic13{
+    grid-column: 5 /span 3;
+    grid-row: 5 /span 3;
+}
+.gallery .pic14{
+    grid-column: 8 /span 1;
+    grid-row: 6 /span 2;
+}
+
+/* testimonials  */
+.card-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+                0 6px 20px rgba(0, 0, 0, 0.19);
+}
+/* footer  */
+.footer{
+    background-color: var(--primaryColor);
+}
+.footer .list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    color: var(--secondaryColor);
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.footer .list .listItem{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+.listItem:hover{
+    background-color:var(--footer-background-color) ;
+    transition:transform .3s ease-in;
+    transform: translateY(-4px);
+}
+.footer p{
+    font-size: 1rem;
+    color: var(--secondaryColor);
+     margin : 0 auto ;
+     width: 70%;
+     text-align: center;
+     line-height: 2.5rem;
+}

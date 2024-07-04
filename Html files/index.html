@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS Files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,22 +25,22 @@
             <div class="collapse navbar-collapse  d-flex justify-content-end align-items-center" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class=" nav-item ">
-                        <a class="nav-link  navicons-color" aria-current="page" href="home">Home</a>
+                        <a class="nav-link  navicons-color" href="home">Home</a>
                     </li>
                     <li class=" nav-item ">
                         <a class="nav-link  navicons-color" href="events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  navicons-color" href="#">Services</a>
+                        <a class="nav-link  navicons-color" href="services">Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link navicons-color" href="#">Booking Form</a>
+                        <a class="nav-link navicons-color" href="bookingform">Booking Form</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link navicons-color" href="#">Gallery</a>
+                        <a class="nav-link navicons-color" href="gallery">Gallery</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link navicons-color" href="#">Testimonials</a>
+                        <a class="nav-link navicons-color" href="testimonials">Testimonials</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +66,8 @@
 
 
     <!-- EVENT SECTION -->
-    <section id="event" class="event">
+    <section id="event" class="event section">
+        <h1 class="text-center fs-2 fw-semibold navicons-color pb-3">Our Events</h1>
         <div class="container-fluid">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -80,8 +86,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active homeimages" data-bs-interval="10000">
                         <div class="overlay "></div>
-                        <img src="/assets/luxurious-dinner-hall-with-large-crystal-chandelier.jpg"
-                            class="d-block w-100 " alt="...">
+                        <img src="/assets/festive-friends-with-balloons.jpg" class="d-block w-100 " alt="...">
                         <div class="carousel-caption d-none d-md-block darken-img">
                             <h5 class="text-white">29<sup>th</sup>October ,2021</h5>
                             <h4 class="text-white">Beach Resort</h4>
@@ -104,7 +109,8 @@
                     </div>
                     <div class="carousel-item homeimages" data-bs-interval="3000">
                         <div class="overlay"></div>
-                        <img src="/assets/festive-friends-with-balloons.jpg" class="d-block w-100 darken-img" alt="...">
+                        <img src="/assets/luxurious-dinner-hall-with-large-crystal-chandelier.jpg"
+                            class="d-block w-100 darken-img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="text-white">6<sup>th</sup> July , 2022</h5>
                             <h4 class="text-white">Rooftop Venue</h4>
@@ -152,6 +158,207 @@
         </div>
     </section>
 
+
+    <!-- SERVICES SECTION  -->
+    <section id="services" class="services section">
+        <h1 class="text-center fs-2 navicons-color pb-3">Our Services</h1>
+        <div class="service-container container-fluid">
+            <div class="service">
+                <svg class="serviceIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                </svg>
+                <div class="service-heading">
+                    Venue Management
+                </div>
+                <div class="service-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                    distinctio necessitatibus pariatur voluptatibus
+                </div>
+            </div>
+            <div class="service">
+                <svg class="serviceIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path
+                        d="M240 144A96 96 0 1 0 48 144a96 96 0 1 0 192 0zm44.4 32C269.9 240.1 212.5 288 144 288C64.5 288 0 223.5 0 144S64.5 0 144 0c68.5 0 125.9 47.9 140.4 112h71.8c8.8-9.8 21.6-16 35.8-16H496c26.5 0 48 21.5 48 48s-21.5 48-48 48H392c-14.2 0-27-6.2-35.8-16H284.4zM144 80a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM400 240c13.3 0 24 10.7 24 24v8h96c13.3 0 24 10.7 24 24s-10.7 24-24 24H280c-13.3 0-24-10.7-24-24s10.7-24 24-24h96v-8c0-13.3 10.7-24 24-24zM288 464V352H512V464c0 26.5-21.5 48-48 48H336c-26.5 0-48-21.5-48-48zM48 320h80 16 32c26.5 0 48 21.5 48 48s-21.5 48-48 48H160c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V336c0-8.8 7.2-16 16-16zm128 64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160v32h16zM24 464H200c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
+                </svg>
+                <div class="service-heading">Catering and Kitchen</div>
+                <div class="service-content">
+                    Voluptatum mollitia quaenao. Vero ipsum sapiente molestias accusamus
+                    rerum sed a eligendi aut quia
+                </div>
+            </div>
+            <div class="service">
+                <svg class="serviceIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z" />
+                </svg>
+                <div class="service-heading">Entertaintment Activities</div>
+                <div class="service-content">
+                    Voluptatum mollitia quaenao. Vero ipsum sapiente molestias accusamus
+                    rerum sed a eligendi aut quia
+                </div>
+            </div>
+            <div class="service">
+                <svg class="serviceIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+                </svg>
+                <div class="service-heading">Logistics and Transportation</div>
+                <div class="service-content">
+                    Voluptatum mollitia quaenao. Vero ipsum sapiente molestias accusamus
+                    rerum sed a eligendi aut quia
+                </div>
+            </div>
+            <div class="service">
+                <svg class="serviceIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path
+                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM229.5 173.3l72 144c5.9 11.9 1.1 26.3-10.7 32.2s-26.3 1.1-32.2-10.7L253.2 328H162.8l-5.4 10.7c-5.9 11.9-20.3 16.7-32.2 10.7s-16.7-20.3-10.7-32.2l72-144c4.1-8.1 12.4-13.3 21.5-13.3s17.4 5.1 21.5 13.3zM208 237.7L186.8 280h42.3L208 237.7zM392 256a24 24 0 1 0 0 48 24 24 0 1 0 0-48zm24-43.9V184c0-13.3 10.7-24 24-24s24 10.7 24 24v96 48c0 13.3-10.7 24-24 24c-6.6 0-12.6-2.7-17-7c-9.4 4.5-19.9 7-31 7c-39.8 0-72-32.2-72-72s32.2-72 72-72c8.4 0 16.5 1.4 24 4.1z" />
+                </svg>
+                <div class="service-heading">Marketing and Promotion</div>
+                <div class="service-content">
+                    Voluptatum mollitia quaenao. Vero ipsum sapiente molestias accusamus
+                    rerum sed a eligendi aut quia
+                </div>
+            </div>
+            <div class="service">
+                <svg class="serviceIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z" />
+                </svg>
+                <div class="service-heading">Event Planning</div>
+                <div class="service-content">
+                    Voluptatum mollitia quaenao. Vero ipsum sapiente molestias accusamus
+                    rerum sed a eligendi aut quia
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM  -->
+    <section class="bookingform section" id="bookingform">
+        <h1 class="text-center fs-2 fw-semibold navicons-color pb-3">Events Booking Form</h1>
+        <div class="container-fluid">
+            <div class="booking row align-items-center">
+                <div class="col-md-6">
+                    <div class="sideImage">
+                        <img class="img-fluid" src="../assets/bookingform.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form">
+                        <form class="form">
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="abc xyz" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="abc@gmail.com"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="form-label">Phone No</label>
+                                <input type="text" class="form-control" id="phone" placeholder="xx-xxxxxxx-x" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="events" class="form-label">Event Selection</label>
+                                <select id="events" class="form-select" aria-label="Select your Event">
+                                    <option selected>Select your Event</option>
+                                    <option value="1">Wedding/Engagement</option>
+                                    <option value="2">Dinner/Lunch/Hi tea</option>
+                                    <option value="3">Birthday Celeberations</option>
+                                    <option value="3">Other celeberation Parties</option>
+
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleFormControlTextarea1" class="form-label">Special
+                                    Requests</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="btn">
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY  -->
+    <section class="section gallery" id="gallery">
+        <h1 class="text-center fs-2 fw-semibold navicons-color pb-3">Gallery</h1>
+        <div class="image-gallery">
+            <img src="../assets/bookingform.jpg" class="pic pic1" />
+            <img src="../assets/decorated-banquet-hall-with-flowers.jpg" class="pic pic2" />
+            <img src="../assets/decorated-banquet-hall-with-served-round-table-with-hydrangea-centerpiece-chiavari-chairs.jpg"
+                class="pic pic3" />
+            <img src="../assets/festive-friends-with-balloons.jpg" class="pic pic4" />
+            <img src="../assets/kristina-evstifeeva-y3h6gh2fpaI-unsplash.jpg" class="pic pic5" />
+            <img src="../assets/luxurious-dinner-hall-with-large-crystal-chandelier.jpg" class="pic pic6" />
+            <img src="../assets/marc-babin-ecGZWPOvya0-unsplash.jpg" class="pic pic7" />
+            <img src="../assets/photorealistic-wedding-venue-with-intricate-decor-ornaments.jpg" class="pic pic8" />
+            <img src="../assets/white-chairs-stand-before-wedding-altar-porch.jpg" class="pic pic9" />
+            <img src="../assets/decorated-banquet-hall-with-flowers.jpg" class="pic pic10" />
+            <img src="../assets/bookingform.jpg" class="pic pic11" />
+            <img src="../assets/festive-friends-with-balloons.jpg" class="pic pic12" />
+            <img src="../assets/luxurious-dinner-hall-with-large-crystal-chandelier.jpg" class="pic pic13" />
+            <img src="../assets/photorealistic-wedding-venue-with-intricate-decor-ornaments.jpg" class="pic pic14" />
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS  -->
+    <section class="section testimonials" id="testimonials">
+        <h1 class="text-center fs-2 fw-semibold navicons-color pb-3">Our Client Testimonials</h1>
+        <div class="container-fluid d-flex justify-content-evenly align-items-center">
+            <div class="card card-hover" style="width: 18rem;">
+                <img src="../assets/testimonials/istockphoto-1384357176-1024x1024.jpg" class="card-img-top"
+                    alt="test 1">
+                <div class="card-body">
+                    <h5 class="card-title">Client Testimonial</h5>
+                    <p class="card-text">Their attention to detail and seamless coordination made our event
+                        unforgettable.</p>
+
+                </div>
+            </div>
+            <div class="card card-hover" style="width: 18rem;">
+                <img src="../assets/testimonials/istockphoto-1437047112-1024x1024.jpg" class="card-img-top"
+                    alt="test 2">
+                <div class="card-body">
+                    <h5 class="card-title">Client Testimonial</h5>
+                    <p class="card-text">From start to finish, the team provided exceptional service and ensured
+                        everything ran smoothly..</p>
+
+                </div>
+            </div>
+            <div class="card card-hover" style="width: 18rem;">
+                <img src="../assets/testimonials/istockphoto-1806223369-1024x1024.jpg" class="card-img-top"
+                    alt="test 3">
+                <div class="card-body">
+                    <h5 class="card-title">Client Testimonial</h5>
+                    <p class="card-text">Outstanding planning and execution; they turned our vision into a perfect
+                        reality.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER  -->
+    <section class="section" id="footer">
+        <div class="footer">
+            <div class="list">
+                <div class="listItem">eventmanager@gmail.com</div>
+                <div class="listItem">03xx-xx-xxxxx</div>
+                <div class="listItem">@eventmanager</div>
+            </div>
+            <p>
+                &copy; ALL Copy Rights Reserved to @Faiza Kashaf
+            </p>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
